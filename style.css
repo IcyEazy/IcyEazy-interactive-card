@@ -1,0 +1,242 @@
+body{
+    font-family: "Space Grotesk";
+    font-size: 1.125rem;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.purple{
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* flex-basis: 33%; */
+    /* padding: 120px 0 120px 120px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    z-index: 1;
+}
+
+.front{
+    background-image: url("./images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 20px;
+    margin: 100px -100px 0px 120px;
+    width: 410px;
+    height: 205px;
+    color: white;
+}
+
+.big-circle{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.small-circle{
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* .front-texts{
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+} */
+
+.circle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-number{
+    word-spacing: 60px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.name-exp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.back{
+    background-image: url("./images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 450px;
+    height: 245px;
+    margin: 40px -100px 100px 200px;
+    position: relative;
+}
+
+.back p{
+    color: white;
+    position: absolute;
+    top: 90px;
+    left: 350px;
+}
+
+.white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 220px 0 320px; */
+    background-color: white;
+    /* width: 100%; */
+}
+
+.form{
+    margin-left: 170px;
+    padding: 20px;
+    /* display: none; */
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+.date-cvc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 20px 0;
+}
+
+.num-date{
+    margin: 20px 0 20px 0;
+}
+
+.nums{
+    display: flex;
+}
+
+.exp{
+    margin: 7px 20px 0 10px;
+    padding: 8px;
+}
+
+.nums input{
+    width: 3.75rem;
+}
+
+input{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    margin-top: 8px;
+}
+
+button{
+    width: 100%;
+    padding: 6px 140px;
+    font-size: 17px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: 2px solid hsl(278, 68%, 11%);
+    border-radius: 8px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(278, 69%, 18%);
+}
+
+.complete{
+    display: none;
+    text-align: center;
+    margin-left: 170px;
+}
+
+.form-hide{
+    display: none;
+}
+
+.complete-show{
+    display: block;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:560px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .purple{
+        background-image: url("./images/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .front{
+        background-image: url("./images/bg-card-back.png");
+        margin: 50px 0 0 100px;
+        background-size: contain;
+        width: 310px;
+    }
+
+    .back{
+        background-image: url("./images/bg-card-front.png");
+        margin: -135px 0 0 30px;
+        background-size: contain;
+        width: 350px;
+    }
+
+    .front-texts{
+        position: absolute;
+        top: 163px;
+        left: 55px;
+        z-index: 1;
+        /* transform: translate(-50%, -50%); */
+        /* width: 90%; */
+    }
+
+    .name-exp{
+        display: block;
+    }
+
+    .white{
+        padding: 20px;
+    }
+
+    .card-number{
+        word-spacing: 28px;
+    }
+
+    #card-name{
+        margin-right: 100px;
+    }
+
+    .back p{
+        position: absolute;
+        top: -45px;
+        left: 335px;
+    }
+    .form, .complete{
+        margin: 0;
+    }
+}
